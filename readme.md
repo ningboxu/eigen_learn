@@ -8,5 +8,5 @@
 | euler2q.cpp    | eulerToQuaternion  |      |
 | quaternion.cpp | Eigen::Quaternionf |      |
 | pcl_quat.cpp   |                    |      |
-|                |                    |      |
+| QuatRotate.cpp |                    |      |
 
