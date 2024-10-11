@@ -1,0 +1,32 @@
+// C++20 的 Concepts
+// 概念：
+// Concepts 是 C++20 引入的新特性，用于约束模板参数的类型。Concepts
+// 提供了一种更清晰的方式来指定模板的参数要求，使代码更具可读性和安全性。
+
+//! note:
+// 最低要求：
+// g++ 10.0 及以上版本支持 C++20
+// clang++ 10.0 及以上版本支持 C++20
+
+// #include <iostream>
+// #include <concepts>
+
+// // 限制 T 必须是可加的（可以使用加法运算符）
+// template <typename T>
+// concept Addable = requires(T a, T b) {
+//     { a + b } -> std::same_as<T>;
+// };
+
+// template <Addable T>
+// T add(T a, T b)
+// {
+//     return a + b;
+// }
+
+// int main()
+// {
+//     std::cout << add(1, 2) << std::endl;        // OK，int 可加
+//     std::cout << add(3.14, 2.71) << std::endl;  // OK，double 可加
+//     // std::cout << add("Hello", "World");   // 编译错误，string 不符合
+//     Addable return 0;
+// }
